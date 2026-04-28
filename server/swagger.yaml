@@ -1,0 +1,31 @@
+openapi: 3.0.4
+
+info:
+  title: Palace API
+  description: API specifying endpoints for the Palace API
+  version: 0.0.1
+
+paths:
+  /create-game:
+    post:
+      summary: Creates a game object on the server
+      requestBody:
+        required: true
+        content: 
+          applicaiton/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+
+      responses:
+        "200":
+          description: Information about the created game
+          content: 
+            applicaiton/json:
+              schema:
+                type: object
+                properties:
+                  username:
+                    type: string
