@@ -27,5 +27,7 @@ paths:
               schema:
                 type: object
                 properties:
-                  username:
+                  id:
+                    type: string
+                  joinCode:
                     type: string
